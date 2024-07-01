@@ -125,8 +125,10 @@ def destroy():
     PWM.setMotorModel(0, 0, 0, 0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     try:
         loop()
-    except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the child program destroy() will be  executed.
+    except (
+        KeyboardInterrupt
+    ):  # When 'Ctrl+C' is pressed, the child program destroy() will be  executed.
         destroy()
