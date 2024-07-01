@@ -1,7 +1,6 @@
 import os
-import sys
-import time
-os.system("cd /usr/bin && sudo rm python && sudo ln -s python3 python")
+# os.system("cd /usr/bin && sudo rm python && sudo ln -s python3 python")   <- just check it manually
+
 flag=0x00
 for x in range(1,4):
     if os.system("sudo apt-get update") == 0:
